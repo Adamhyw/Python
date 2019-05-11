@@ -1,0 +1,22 @@
+1、	if语句由if，elif和else组成，其中elif和else是可选的。if，elif，else要与冒号配合使用，如if a>b:
+
+2、	while语句中的break代表跳出循环，continue代表回到开头。while要和冒号配套使用。格式如下：
+while 表达式:
+suite
+
+3、	for 循环语句格式
+for 变量 in 迭代值:
+suite
+原理为变量逐一引用迭代值的每个对象并执行suite。
+for循环支持break和continue
+
+4、	异常处理语句格式
+try:
+try_suite
+       except exception1 as variable1
+           exception_suite1
+       …
+       except exceptionN as variable
+           exception_suiteN
+原理为将原本需要运行的程序放在try_suite里面，当出现异常时，系统会判断属于哪类exception并执行对应的suite。variable是可选的，只要引用了variable，当出现异常时，variable引用的是异常自身。
+5、	ValueError异常代表输入无效的数据
