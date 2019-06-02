@@ -29,3 +29,18 @@ a="I am a handsome man," + \
 第二种
 a=("I am a handsome man,"
   "You are a beautiful woman")
+  
+12、字符串索引支持正向和反向，前者则是从第一个字符开始，后者则是从最后一个字符，如
+正向索引 a[0]
+反向索引 a[-1]
+
+13、字符串支持分片操作，有以下三种语法格式
+seq[start]
+seq[start:end]
+seq[start:end:step]
+第一种是常用的读取单个字符方式
+第二种是选取start索引直至end索引的所有字符，如a[3:9]或a[:9]或a[3:]。如果没有指定start或end，则默认为start是第一个字符或end是最后一个字符
+第三种是根据step给定的步长抽选字符，如a[3:9:2]，则抽选字符a[3],a[5],a[7],a[9]。同样可以忽略start和end，但是step不可忽略。步长可以为负值。
+如果步长为负值，则start值也必须为负值，否则会报错，此时start没有标明的话，则默认为-1。
+
+一种反转字符串的方法- seq[::-1]
