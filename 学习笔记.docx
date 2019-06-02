@@ -14,3 +14,10 @@
 
 8、python所有的数据类型都可以作为函数并不带任何参数调用，如x=int()，这时x被赋值为0，因为int函数默认值是0
 
+9、如果要在带引号的字符串中使用引号，当字符串中的引号与外面一层的引号不同时，可以直接使用引号，当引号一样时，需进行转义，如
+a="Single 'quotes' are fine; \"doubles\" must be escaped."
+b='Single \'quotes\' are fine; "doubles" must be escaped.'
+
+10、如果字符串需要跨行表示，可以使用三引号，如
+a='''I am a handsome man,
+     You are a beautiful woman'''
