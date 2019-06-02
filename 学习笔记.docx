@@ -18,6 +18,14 @@
 a="Single 'quotes' are fine; \"doubles\" must be escaped."
 b='Single \'quotes\' are fine; "doubles" must be escaped.'
 
-10、如果字符串需要跨行表示，可以使用三引号，如
+10、如果字符串内容包含转行，可以使用三引号，如
 a='''I am a handsome man,
      You are a beautiful woman'''
+
+11、如果字符串本身不换行，只是在赋值时需要换行，可以用以下两种方式
+第一种
+a="I am a handsome man," + \
+  "You are a beautiful woman"
+第二种
+a=("I am a handsome man,"
+  "You are a beautiful woman")
